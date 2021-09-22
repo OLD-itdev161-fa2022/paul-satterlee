@@ -5,11 +5,14 @@ import {check, validationResults} from 'express-validator';
 //initialize express applications
 const app = express();
 
+
 //Connect database
 connectDatabase();
 
+
 //Configure Middleware
 app.use(express.json({extended: false}));
+
 
 //API endpoints
 /**
